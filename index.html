@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Instagram Feed con Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid row fixed-top bg-light m-0 px-5 py-2">
+    <div class="col-md-9 mt-1">
+      <i style="font-size:30px;display:inline;" class="fa-brands fa-instagram align-text-top"></i><h1 style="display:inline;" class="px-1 align-text-top fs-4">Instagram</hh1>
+    </div>
+    <div class="col-md-2">
+      <button type="button" class="btn btn-info btn-lg bg-success text-white fs-5 rounded border-0 px-3 py-1" data-toggle="modal" data-target="#myModal">Create a new post</button>
+    </div>
+    <div class="col dropdown">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Accesibility</a>
+          <a class="dropdown-item mb-1" href="#">Privacy and Data</a>
+          <a class="dropdown-item text-danger border-top" href="#">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="container">
+      <div class="mt-5 p-0 container-fluid row d-flex justify-content-center">
+        <div class="col-md-10 pt-5">      
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu1"><i class="fas fa-th"></i></a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2"><i class="fas fa-square"></i></a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="tab-content row">
+         <div id="menu1" class="tab-pane active p-0"> 
+            <div class="container-fluid row d-flex justify-content-center">
+              <div class="col-md-10 p-0"> 
+                <div class="row grid m-0 p-0">
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074_960_720.jpg">
+                  </div>
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915_960_720.jpg">
+                  </div>
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2014/11/01/18/46/dubrovnik-512798_960_720.jpg">
+                  </div>
+                </div>
+                <div class="row grid m-0 p-0">
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2017/10/19/18/23/woman-2868705_960_720.jpg">
+                  </div>
+                <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2016/11/19/11/05/architecture-1838626_960_720.jpg">
+                </div>
+                <div class="col-4 item m-0 p-0">
+                    <img class="p-1"src="https://cdn.pixabay.com/photo/2016/09/18/20/47/football-1678992_960_720.jpg">
+                </div>
+                </div>
+                <div class="row grid m-0 p-0">
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2022/08/05/05/59/korea-7366036_960_720.jpg">
+                  </div>
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2022/05/02/10/12/window-7169327_960_720.jpg">
+                  </div>
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1"src="https://cdn.pixabay.com/photo/2022/08/02/04/11/city-7359471_960_720.jpg">
+                  </div>
+                </div>
+                <div class="row grid m-0 p-0">
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2020/03/06/12/30/flamingos-4906958_960_720.jpg">
+                  </div>
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1" src="https://cdn.pixabay.com/photo/2022/07/06/08/59/landscape-7304666_960_720.jpg">
+                  </div>
+                  <div class="col-4 item m-0 p-0">
+                    <img class="p-1"src="https://cdn.pixabay.com/photo/2022/09/11/09/26/sea-7446433_960_720.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <div class="container pb-5 row justify-content-center mb-5">
+              <div class="row col-8 border mt-4 p-0">
+                <div class="col-10 p-2">
+                  <h4>My Crazy dog Spark!</h4>
+                </div>
+                <div class="col-2 p-2">
+                  <h4 class="text-secondary">08/26</h4>
+                </div>
+                  <img class="m-0 p-0" src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074_960_720.jpg">
+                <div class="border mb-2">
+                  <p class="pt-2 mb-0"><strong>204 likes</strong></p>
+                  <p class="mt-0">This is an example of a very good photo that you can post on instagram.</p>
+                </div>
+              </div>
+            </div>
+              <br>
+            <div class="container pb-5 row justify-content-center mt-3 mb-5">
+              <div class="row col-8 border mt-4 p-0">
+                <div class="col-10 p-2">
+                  <h4>Besties</h4>
+                </div>
+                <div class="col-2 p-2">
+                  <h4 class="text-secondary">08/02</h4>
+                </div>
+                  <img class="m-0 p-0" src="https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915_960_720.jpg">
+                <div class="border mb-2">
+                  <p class="pt-2 mb-0"><strong>345 likes</strong></p>
+                  <p class="mt-0">Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace.</p>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="container pb-5 row justify-content-center mt-3 mb-5">
+              <div class="row col-8 border mt-4 p-0">
+                <div class="col-10 p-2">
+                  <h4>Summer holidays</h4>
+                </div>
+                <div class="col-2 p-2">
+                  <h4 class="text-secondary">07/15</h4>
+                </div>
+                  <img class="m-0 p-0" src="https://cdn.pixabay.com/photo/2014/11/01/18/46/dubrovnik-512798_960_720.jpg">
+                <div class="border mb-2">
+                  <p class="pt-2 mb-0"><strong>91 likes</strong></p>
+                  <p class="mt-0">In love with this country ❤️</p>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="container pb-5 row justify-content-center mt-3 mb-5">
+              <div class="row col-8 border mt-4 p-0">
+                <div class="col-10 p-2">
+                  <h4>Live love laugh!</h4>
+                </div>
+                <div class="col-2 p-2">
+                  <h4 class="text-secondary">06/04</h4>
+                </div>
+                  <img class="m-0 p-0" src="https://cdn.pixabay.com/photo/2017/10/19/18/23/woman-2868705_960_720.jpg">
+                <div class="border mb-2">
+                  <p class="pt-2 mb-0"><strong>678 likes</strong></p>
+                  <p class="mt-0">Vivamus maximus convallis metus, non sagittis nisl ultricies et.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="m-5"></div>
+      </div>
+    </div>
+
+<!-- Modal -->
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Create a new post</h4>
+          <button type="button" class="close bg-transparent text-secondary border-0" data-dismiss="modal"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold">Caption:</p>
+          <input class="col-12 rounded border" type="textarea" style="height:50px;" placeholder="Add the caption of your post here">
+          <div class="col rounded mt-2">
+            <button style="width:35px; padding:5px; text-align:center;" class="rounded border"><i class="fa-solid fa-camera"></i></button>
+            <button style="width:35px; padding:5px; text-align:center;" class="rounded border"><i class="fa-solid fa-location-dot"></i></button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info btn-sm bg-secondary text-white rounded border-0 px-3" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm bg-success text-white rounded border-0 px-3">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
